@@ -39,7 +39,7 @@ class MyHomePage extends StatelessWidget {
             children: [
               ShinyButton(
                 onPressed: () => launchURL('https://example.com'),
-                label: 'Subscribe and Play',
+                label: Text('Subscribe and Play'),
                 icon: Icon(
                   FontAwesomeIcons.play,
                   color: Colors.white,
@@ -62,7 +62,7 @@ class MyHomePage extends StatelessWidget {
               SizedBox(height: 20),
               ShinyButton(
                 onPressed: () => launchURL('https://example.com'),
-                label: 'Disabled Button',
+                label: Text('Disabled Button'),
                 icon: Icon(
                   FontAwesomeIcons.play,
                   color: Colors.white,
@@ -81,7 +81,7 @@ class MyHomePage extends StatelessWidget {
               SizedBox(height: 20),
               ShinyButton(
                 onPressed: () => launchURL('https://example.com'),
-                label: 'No Icon Button',
+                label: Text('No Icon Button'),
                 backgroundColor: Colors.blue,
                 textColor: Colors.white,
                 isEnabled: true,
@@ -92,7 +92,7 @@ class MyHomePage extends StatelessWidget {
               SizedBox(height: 20),
               ShinyButton(
                 onPressed: () => launchURL('https://example.com'),
-                label: 'Loading Button',
+                label: Text('Loading Button'),
                 backgroundColor: Colors.orange,
                 textColor: Colors.white,
                 isEnabled: true,
@@ -105,7 +105,7 @@ class MyHomePage extends StatelessWidget {
               SizedBox(height: 20),
               ShinyButton(
                 onPressed: () => launchURL('https://example.com'),
-                label: 'Custom Text Style',
+                label: Text('Custom Text Style'),
                 icon: Icon(
                   FontAwesomeIcons.star,
                   color: Colors.white,
@@ -121,7 +121,7 @@ class MyHomePage extends StatelessWidget {
               SizedBox(height: 20),
               ShinyButton(
                 onPressed: () => launchURL('https://example.com'),
-                label: 'No Ripple Effect',
+                label: Text('No Ripple Effect'),
                 backgroundColor: Colors.teal,
                 textColor: Colors.white,
                 isEnabled: true,
@@ -134,7 +134,7 @@ class MyHomePage extends StatelessWidget {
               ShinyButton(
                 onPressed: () => print('Button Pressed'),
                 onLongPress: () => print('Button Long Pressed'),
-                label: 'Long Press Button',
+                label: Text('Long Press Button'),
                 backgroundColor: Colors.cyan,
                 textColor: Colors.white,
                 isEnabled: true,

@@ -5,7 +5,7 @@ import 'package:shiny_button/shiny_button.dart';
 void main() {
   testWidgets('ShinyButton renders correctly and responds to tap',
       (WidgetTester tester) async {
-    bool buttonPressed = false;
+    var buttonPressed = false;
 
     await tester.pumpWidget(
       MaterialApp(
@@ -14,7 +14,7 @@ void main() {
             onPressed: () {
               buttonPressed = true;
             },
-            label: 'Subscribe and Play',
+            label: Text('Subscribe and Play'),
             icon: Icon(Icons.play_arrow, color: Colors.white),
             backgroundColor: Colors.green,
             textColor: Colors.white,
@@ -43,7 +43,7 @@ void main() {
         home: Scaffold(
           body: ShinyButton(
             onPressed: () {},
-            label: 'Subscribe and Play',
+            label: Text('Subscribe and Play'),
             icon: Icon(Icons.play_arrow, color: Colors.white),
             backgroundColor: Colors.green,
             textColor: Colors.white,

@@ -7,7 +7,7 @@ enum IconPosition { leading, trailing, above, below }
 class ShinyButton extends StatefulWidget {
   final VoidCallback onPressed;
   final VoidCallback? onLongPress;
-  final String label;
+  final Widget label;
   final Icon? icon;
   final Color backgroundColor;
   final Color textColor;
@@ -218,30 +218,29 @@ class _ShinyButtonState extends State<ShinyButton>
                                   children: [
                                     widget.icon!,
                                     SizedBox(height: 4.0),
-                                    Text(
-                                      widget.label,
-                                      style: widget.textStyle ??
-                                          TextStyle(
-                                            color: widget.isEnabled
-                                                ? widget.textColor
-                                                : widget.disabledTextColor,
-                                          ),
-                                    ),
+                                    widget.label,
+                                    // style: widget.textStyle ??
+                                    //     TextStyle(
+                                    //       color: widget.isEnabled
+                                    //           ? widget.textColor
+                                    //           : widget.disabledTextColor,
+                                    //     ),
+                                    // ),
                                   ],
                                 ),
                               if (widget.icon != null &&
                                   widget.iconPosition == IconPosition.below)
                                 Column(
                                   children: [
-                                    Text(
-                                      widget.label,
-                                      style: widget.textStyle ??
-                                          TextStyle(
-                                            color: widget.isEnabled
-                                                ? widget.textColor
-                                                : widget.disabledTextColor,
-                                          ),
-                                    ),
+                                    // Text(
+                                    widget.label,
+                                    //   style: widget.textStyle ??
+                                    //       TextStyle(
+                                    //         color: widget.isEnabled
+                                    //             ? widget.textColor
+                                    //             : widget.disabledTextColor,
+                                    //       ),
+                                    // ),
                                     SizedBox(height: 4.0),
                                     widget.icon!,
                                   ],
@@ -249,15 +248,15 @@ class _ShinyButtonState extends State<ShinyButton>
                               if (widget.icon == null ||
                                   widget.iconPosition == IconPosition.leading ||
                                   widget.iconPosition == IconPosition.trailing)
-                                Text(
-                                  widget.label,
-                                  style: widget.textStyle ??
-                                      TextStyle(
-                                        color: widget.isEnabled
-                                            ? widget.textColor
-                                            : widget.disabledTextColor,
-                                      ),
-                                ),
+                                // Text(
+                                widget.label,
+                              // style: widget.textStyle ??
+                              //     TextStyle(
+                              //       color: widget.isEnabled
+                              //           ? widget.textColor
+                              //           : widget.disabledTextColor,
+                              //     ),
+                              // ),
                               if (widget.icon != null &&
                                   widget.iconPosition == IconPosition.trailing)
                                 Padding(
